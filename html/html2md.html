@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+</head>
+<style>
+.container{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.item{
+    margin: 10px;
+}
+#selectorCustomContainer{
+    display: none;
+}
+</style>
+<script src="../scripts/lib/turndown.js"></script>
+<script src="../scripts/html2md.js"></script>
+<body>
+<div class="container">
+    <div class="item">
+        <div>
+         <input type="checkbox" id="selectorCustom"><label for="selectorCustom">自定义标签</label>
+        <button id="myButton">转换为md</button>
+        </div>
+    </div>
+    <div class="item" id="selectorCustomContainer">
+        <input type="text" id="contentSelector" placeholder="设置选择器">
+        <div>
+            <span>使用的语法为querySelector</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
